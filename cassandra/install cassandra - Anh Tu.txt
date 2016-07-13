@@ -1,0 +1,43 @@
+1. Download apache-cassandra-3.6
+wget http://archive.apache.org/dist/cassandra/3.6/apache-cassandra-3.6-bin.tar.gz
+wget http://archive.apache.org/dist/cassandra/2.1.15/apache-cassandra-2.1.15-bin.tar.gz
+wget http://archive.apache.org/dist/cassandra/2.0.0/apache-cassandra-2.0.0-bin.tar.gz
+
+
+wget http://downloads.datastax.com/cpp-driver/centos/7/cassandra/v2.0.0/cassandra-cpp-driver-2.0.0-1.el7.centos.amd64.rpm
+
+
+2. Extract to /opt/apache-cassandra-3.6
+tar -xvzf apache-cassandra-3.6-bin.tar.gz
+
+3. Add to PATH
+vim ~/.bashrc
+export CASSANDRA_HOME=/opt/apache-cassandra-3.6
+export PATH=$PATH:$CASSANDRA_HOME/bin
+
+4. add user cassandra
+- useradd cassandra
+- passwd cassandra
+
+5. Enable remote access
+vim /opt/apache-cassandra-3.6/conf/cassandra.yaml
+start_rpc: true
+rpc_address: 0.0.0.0
+broadcast_rpc_address: 1.2.3.4
+
+6. Open port 9042 for access
+- yum install firewalld
+- systemctl start firewalld
+- firewall-cmd --zone=public --add-port=9042/tcp --permanent
+- firewall-cmd --reload
+Check port open
+lsof -i | grep 9042
+
+7. Start cassandra
+- su cassandra
+- cassandra
+
+8. Cassandra UI tool: Datastax DevCenter
+
+
+cqlsh

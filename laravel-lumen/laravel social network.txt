@@ -1,0 +1,9 @@
+https://www.quora.com/Is-there-any-open-source-social-networking-website-made-using-a-Laravel-5-framework#
+
+http://www.laravelbestpractices.com/#code_style_guide
+
+https://www.quora.com/What-is-it-like-using-the-Laravel-framework-for-a-social-networking-site-project
+
+http://learninglaravel.net/laravel-php-create-a-social-network-full-app
+
+https://github.com/msalom28/Larasocial

@@ -1,0 +1,39 @@
+In computing, microservices is a software architecture design pattern, in which complex applications are composed of small, independent processes communicating with each other using language-agnostic APIs. These services are small, highly decoupled, and focus on doing a small task.
+– Wikipedia
+
+http://goodheads.io/2015/06/19/developing-a-micro-service-with-lumen/
+
+https://lumen.laravel.com/
+
+http://goodheads.io/2015/06/19/creating-your-first-laravel-5-package/
+
+
+https://laracasts.com/index.php/discuss/channels/general-discussion/share-models-between-two-laravel-projects?page=1
+
+http://raphaeldavinci.com/laravel-shared-model/
+
+
+"repositories":[
+   {
+      "type":"git",
+      "url":"git@bitbucket.org:company-git-name/company-shared.git"
+   }
+],
+
+"require":{
+   "laravel/framework":"5.0.*",
+   "company-git-name/company-shared":"dev-develop"
+},
+
+
+http://caffeinated.ninja/
+
+
+https://assets.wp.nginx.com/wp-content/uploads/2015/05/intro-microservices.png
+
+https://assets.wp.nginx.com/wp-content/uploads/2015/07/Richardson-microservices-part3-taxi-service-1024x609.png
+
+
+http://martinfowler.com/articles/microservices.html
+
+https://laravel-news.com/2015/04/lumen/

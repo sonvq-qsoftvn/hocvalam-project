@@ -1,0 +1,143 @@
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7
+
+How To Install Nginx on CentOS 7
+
+
+$ ssh root@172.16.10.51
+root/abc124
+
+$ sudo yum install epel-release
+
+$ sudo yum install nginx
+
+$ sudo systemctl start nginx
+
+$ sudo firewall-cmd --permanent --zone=public --add-service=http 
+$ sudo firewall-cmd --permanent --zone=public --add-service=https
+$ sudo firewall-cmd --reload
+
+$ sudo service nginx restart
+$ sudo service nginx status 
+
+http://www.queryadmin.com/151/reboot-shutdown-debian-command-line/
+$ reboot
+
+How to check CentOS version
+$ hostnamectl 
+
+
+/usr/share/nginx/html
+/etc/nginx/conf.d/default.conf
+
+
+http://server_domain_name_or_IP/
+
+https://github.com/lucadegasperi/oauth2-server-laravel
+
+https://medium.com/@mshanak/laravel-5-token-based-authentication-ae258c12cfea#.yrtodvfj1
+
+https://laravelista.com/json-web-token-authentication-for-lumen/
+
+https://www.godaddy.com/garage/tech/config/how-to-install-and-configure-nginx-on-centos-7/
+
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7
+
+
+---------------------------
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-centos-7
+Mariadb
+$ sudo yum install mariadb-server mariadb
+$ sudo systemctl start mariadb
+$ sudo mysql_secure_installation
+
+hocvalamdb
+
+
+https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-centos-7
+https://www.digitalocean.com/community/tutorials/how-to-install-laravel-4-on-a-centos-6-vps
+https://www.digitalocean.com/community/tutorials/how-to-upgrade-to-php-7-on-ubuntu-14-04
+http://devdocs.magento.com/guides/v2.0/install-gde/prereq/php-centos.html
+
+
+
+/etc/nginx/conf.d/default.conf
+server {
+    listen       80;
+    server_name  172.16.10.51;
+
+    # note that these lines are originally from the "location /" block
+    root   /usr/share/nginx/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    error_page 404 /404.html;
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+
+    location ~ \.php$ {
+      try_files $uri =404;
+      fastcgi_split_path_info ^(.+\.php)(/.+)$;
+      # fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+      fastcgi_pass php-fpm;
+      fastcgi_index index.php;
+      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+      include fastcgi_params;
+  }
+}
+
+
+yum list installed
+
+http://stackoverflow.com/questions/34060036/have-trouble-installing-phpmyadmin-on-php7-apache-2-4-7-ubuntu
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-a-centos-7-server
+
+http://stackoverflow.com/questions/30891405/not-found-page-in-lumen-after-install
+
+
+
+
+server {
+    listen       80;
+    server_name  172.16.10.51;
+
+    # note that these lines are originally from the "location /" block
+    root   /usr/share/nginx/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+    error_page 404 /404.html;
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+
+    location ~ \.php$ {
+      try_files $uri $uri/ /index.php?$query_string =404;
+      fastcgi_split_path_info ^(.+\.php)(/.+)$;
+      # fastcgi_pass unix:/var/run/php-fpm/php-fpm.sock;
+      fastcgi_pass php-fpm;
+      fastcgi_index index.php;
+      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+      include fastcgi_params;
+    }
+}
+
+
+
+
+apachectl start
+
+apachectl stop
+
+apachectl restart 
+or:
+/sbin/service httpd restart
+
+apachectl status

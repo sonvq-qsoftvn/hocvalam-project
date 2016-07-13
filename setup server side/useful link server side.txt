@@ -1,0 +1,15 @@
+http://www.developer.com/open/building-microservices-with-open-source-technologies.html
+
+https://www.tigerteam.dk/2014/video-and-slides-from-our-microservices-soa-reminded-of-what-it-was-supposed-to-deliver-talk/
+
+https://www.tigerteam.dk/2014/micro-services-its-not-only-the-size-that-matters-its-also-how-you-use-them-part-2/
+
+https://www.infoq.com/articles/apache-spark-streaming?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=articles_link&utm_content=link_text
+
+https://www.infoq.com/articles/apache-spark-machine-learning?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=articles_link&utm_content=link_text
+
+https://www.infoq.com/presentations/apache-spark-big-data-processing?utm_campaign=rightbar_v2&utm_source=infoq&utm_medium=presentations_link&utm_content=link_text
+
+https://www.quora.com/What-is-the-difference-between-Apache-Storm-and-Apache-Spark
+
+http://www.infoworld.com/article/2854894/application-development/spark-and-storm-for-real-time-computation.html

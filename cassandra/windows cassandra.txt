@@ -1,0 +1,3 @@
+http://downloads.datastax.com/php-driver/1.1.0/
+
+https://pecl.php.net/package/cassandra

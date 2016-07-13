@@ -1,0 +1,29 @@
+http://kafka.apache.org/documentation.html
+http://spark.apache.org/docs/latest/
+http://storm.apache.org/
+
+
+http://stackoverflow.com/questions/25037263/apache-kafka-error-on-windows-couldnot-find-or-load-main-class-quorumpeermain
+
+$ d:
+$ cd D:\project\HocVaLam\kafka_2.11-0.10.0.0\bin\windows
+$ zookeeper-server-start.bat ../../config/zookeeper.properties
+$ kafka-server-start.bat ../../config/server.properties
+
+Create a topic:
+
+$ kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+List topics:
+
+$ kafka-topics.bat --list --zookeeper localhost:2181
+
+Send some messages
+
+$ kafka-console-producer.bat --broker-list localhost:9092 --topic test
+This is a message
+This is another message
+
+Start a consumer
+
+$ kafka-console-consumer.bat --zookeeper localhost:2181 --topic test --from-beginning

@@ -1,0 +1,5 @@
+nano /etc/cassandra/conf/cassandra.yml
+
+$ cqlsh
+
+$ cassandra -R -D cassandra.config=file:/etc/cassandra/conf/cassandra.yml

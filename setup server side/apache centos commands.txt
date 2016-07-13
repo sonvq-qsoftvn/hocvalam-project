@@ -1,0 +1,9 @@
+apachectl start
+
+apachectl stop
+
+apachectl restart 
+or:
+/sbin/service httpd restart
+
+apachectl status
