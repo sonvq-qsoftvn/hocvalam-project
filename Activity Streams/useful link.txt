@@ -1,0 +1,3 @@
+http://activitystrea.ms/
+https://www.w3.org/TR/activitystreams-core/#actors
+https://www.w3.org/TR/activitystreams-vocabulary/#object-types
