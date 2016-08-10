@@ -1,0 +1,3 @@
+https://github.com/vroyer/elassandra
+
+http://doc.elassandra.io/en/latest/architecture.html
