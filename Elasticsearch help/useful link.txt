@@ -1,0 +1,11 @@
+http://joelabrahamsson.com/elasticsearch-101/
+
+http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html
+
+https://qbox.io/blog/multi-field-partial-word-autocomplete-in-elasticsearch-using-ngrams
+
+https://github.com/dakrone/elasticsearch-in-action/blob/master/populate.sh
+
+https://www.elastic.co/guide/en/elasticsearch/guide/current/_index_time_search_as_you_type.html
+
+https://github.com/dakrone/elasticsearch-in-action/blob/master/mapping.json
