@@ -1,0 +1,2 @@
+ADD:[/opt/apache-cassandra-3.6/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/ma-25-big,0,8][612696036]
+REMOVE:[/opt/apache-cassandra-3.6/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/ma-23-big,1475034896000,8][1443796667]
